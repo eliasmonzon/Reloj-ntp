@@ -1,6 +1,5 @@
 import machine
 import utime
-import network
 import ntptime
 from lcd16x2 import LCD_16x2
 import wifimgr
