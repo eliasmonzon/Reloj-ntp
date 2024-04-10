@@ -43,10 +43,7 @@ def display_datetime_on_lcd(datetime_tuple):
         lcd.display_string("Hora", row=2)
         lcd.display_string("{:02d}/{:02d}/{:04d}".format(datetime_tuple[2], datetime_tuple[1], datetime_tuple[0]), row=1, col=6)
         lcd.display_string("{:02d}:{:02d}:{:02d}".format(buenos_aires_hour, datetime_tuple[4], datetime_tuple[5]), row=2, col=6)
-    else:
-        lcd.clear()
-        
-        lcd.display_string("pulse reset", row=2)
+    
     # Bucle principal
 while True:
     # Intentar conectar a la red WiFi
