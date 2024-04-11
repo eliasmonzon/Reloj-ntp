@@ -38,7 +38,6 @@ def get_ntp_time():
 def display_datetime_on_lcd(datetime_tuple):
     if datetime_tuple is not None:
         buenos_aires_hour = (datetime_tuple[3] - 3) % 24  # Ajuste de hora para Buenos Aires (UTC-3)
-        lcd.clear()
         lcd.display_string("Fecha", row=1)
         lcd.display_string("Hora", row=2)
         lcd.display_string("{:02d}/{:02d}/{:04d}".format(datetime_tuple[2], datetime_tuple[1], datetime_tuple[0]), row=1, col=6)
