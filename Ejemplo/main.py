@@ -49,7 +49,7 @@ while True:
         # Si la conexión WiFi es exitosa, obtener la hora desde NTP
         current_time = get_ntp_time()
         
-        # Mostrar la hora en el LCD solo si se obtuvo correctamente
+        # Mostrar la fecha y hora en el LCD solo si se obtuvo correctamente
         if current_time is not None:
             display_datetime_on_lcd(current_time)
     
